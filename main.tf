@@ -38,16 +38,11 @@ variable "parameters" {
     { name = "roboshop.{{env}}.user.mongodb_url" , value = "mongodb://mongodb-{{env}}.devopskumar.site:27017/users" , type = "String" } ,
 
 
-
-
-
     ##### Secure Strings
     { name = "roboshop.{{env}}.dispatch.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.{{env}}.payment.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
 
-
-
-
-
   ]
 }
+
+variable "env" {}
