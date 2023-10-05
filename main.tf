@@ -8,11 +8,11 @@ resource "aws_ssm_parameter" "params" {
 variable "parameters" {
   default = [
     #### Parameters for Dev environment
-    { name = "roboshop.dev.frontend.catalogue_url" , value = "proxy_pass http://catalogue-dev.devopskumar.site:8080/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.cart_url" , value = "proxy_pass http://cart-dev.devopskumar.site:8080/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.user_url" , value = "proxy_pass http://user-dev.devopskumar.site:8080/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.payment_url" , value = "proxy_pass http://payment-dev.devopskumar.site:8080/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.shipping_url" , value = "proxy_pass http://shipping-dev.devopskumar.site:8080/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.catalogue_url" , value = "http://catalogue-dev.devopskumar.site:8080/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.cart_url" , value = "http://cart-dev.devopskumar.site:8080/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.user_url" , value = "http://user-dev.devopskumar.site:8080/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.payment_url" , value = "http://payment-dev.devopskumar.site:8080/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.shipping_url" , value = "http://shipping-dev.devopskumar.site:8080/" , type = "String" } ,
     { name = "roboshop.dev.catalogue.catalogue_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.catalogue.mongodb_env" , value = "true" , type = "String" } ,
     { name = "roboshop.dev.catalogue.mongodb_url" , value = "mongodb://mongodb-dev.devopskumar.site:27017/catalogue" , type = "String" } ,
