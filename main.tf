@@ -37,10 +37,11 @@ variable "parameters" {
     { name = "roboshop.dev.user.mongodb_env" , value = "true" , type = "String" } ,
     { name = "roboshop.dev.user.redis_host" , value = "redis-dev.devopskumar.site" , type = "String" } ,
     { name = "roboshop.dev.user.mongodb_url" , value = "mongodb://mongodb-dev.devopskumar.site:27017/users" , type = "String" } ,
+    { name = "roboshop.dev.mysql.username" , value = "roboshop" , type = "String"},
     ##### Secure "String"s
     { name = "roboshop.dev.dispatch.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.payment.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
-
+    { name = "roboshop.dev.mysql.password" , value = "roboshop123" , type = "SecureString" } ,
 
     #### Parameters for Prod environment
     { name = "roboshop.prod.frontend.catalogue_url" , value = "proxy_pass http://catalogue-prod.devopskumar.site:8080/" , type = "String" } ,
