@@ -1,5 +1,5 @@
 dev:
-	@git pull
-	@rm -rf .terraform
-	@terraform init  -backend-config=state.tf
+    @rm -rf .terraform
+    @git pull
+	@terraform init
 	@terraform apply -auto-approve
