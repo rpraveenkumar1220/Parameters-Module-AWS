@@ -5,7 +5,7 @@ resource "aws_ssm_parameter" "params" {
   value = var.parameters[count.index].value
 
   overwrite = true
-  key_id    = "a22c937a-e218-4e4a-b545-d6c384ff99fc"
+  key_id   = "a22c937a-e218-4e4a-b545-d6c384ff99fc"
 }
 
 variable "parameters" {
@@ -43,6 +43,7 @@ variable "parameters" {
     { name = "roboshop.dev.mysql.username" , value = "roboshop" , type = "String"},
     { name = "roboshop.dev.mongodb.username" , value = "roboshop" , type = "String"},
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+
     ##### Secure "String"s
     { name = "roboshop.dev.dispatch.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.payment.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
