@@ -43,13 +43,15 @@ variable "parameters" {
     { name = "roboshop.dev.mysql.username" , value = "roboshop" , type = "String"},
     { name = "roboshop.dev.mongodb.username" , value = "roboshop" , type = "String"},
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "String" },
+
 
     ##### Secure "String"s
     { name = "roboshop.dev.dispatch.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.payment.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.mysql.password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.mongodb.password" , value = "roboshop123" , type = "SecureString" } ,
-    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+
 
     #### Parameters for Prod environment
     { name = "roboshop.prod.frontend.catalogue_url" , value = "proxy_pass http://catalogue-prod.devopskumar.site:8080/" , type = "String" } ,
