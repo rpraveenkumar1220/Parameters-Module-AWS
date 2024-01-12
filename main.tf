@@ -43,6 +43,7 @@ variable "parameters" {
     { name = "roboshop.dev.mysql.username" , value = "roboshop" , type = "String"},
     { name = "roboshop.dev.mongodb.username" , value = "roboshop" , type = "String"},
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
+    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "String" },
 
 
 
@@ -51,7 +52,7 @@ variable "parameters" {
     { name = "roboshop.dev.payment.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.mysql.password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.dev.mongodb.password" , value = "roboshop123" , type = "SecureString" } ,
-    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
+#    { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
 
 
     #### Parameters for Prod environment
