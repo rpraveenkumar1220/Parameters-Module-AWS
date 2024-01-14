@@ -24,9 +24,9 @@ variable "parameters" {
 
     ##Cart
     { name = "roboshop.dev.cart.cart_user" , value = "roboshop" , type = "String" } ,
-    { name = "roboshop.dev.cart.redis_host" , value = "redis-dev.devopskumar.site" , type = "String" } ,
+    { name = "roboshop.dev.cart.redis_host" , value = "elasticache-dev.nud0cy.clustercfg.use1.cache.amazonaws.com" , type = "String" } ,
     { name = "roboshop.dev.cart.catalogue_host" , value = "catalogue-dev.devopskumar.site" , type = "String" } ,
-    { name = "roboshop.dev.cart.catalogue_port" , value = "8080" , type = "String" } ,
+    { name = "roboshop.dev.cart.catalogue_port" , value = "80" , type = "String" } ,
     ##Dispatch
     { name = "roboshop.dev.dispatch.dispatch_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.dispatch.rabbitmq_host" , value = "rabbitmq-dev.devopskumar.site" , type = "String" } ,
@@ -34,22 +34,25 @@ variable "parameters" {
     ##Payment
     { name = "roboshop.dev.payment.payment_user" , value = "root" , type = "String" } ,
     { name = "roboshop.dev.payment.cart_host" , value = "cart-dev.devopskumar.site" , type = "String" } ,
-    { name = "roboshop.dev.payment.cart_port" , value = "8080" , type = "String" } ,
+    { name = "roboshop.dev.payment.cart_port" , value = "80" , type = "String" } ,
     { name = "roboshop.dev.payment.user_host" , value = "user-dev.devopskumar.site" , type = "String" } ,
-    { name = "roboshop.dev.payment.user_port" , value = "8080" , type = "String" } ,
+    { name = "roboshop.dev.payment.user_port" , value = "80" , type = "String" } ,
     { name = "roboshop.dev.payment.rabbitmq_host" , value = "rabbitmq-dev.devopskumar.site" , type = "String" } ,
     { name = "roboshop.dev.payment.rabbitmq_user" , value = "roboshop" , type = "String" } ,
     ###Shipping
     { name = "roboshop.dev.shipping.shipping_user" , value = "roboshop" , type = "String" } ,
-    { name = "roboshop.dev.shipping.cart_endpoint" , value = "cart-dev.devopskumar.site:8080" , type = "String" } ,
-    { name = "roboshop.dev.shipping.mysql_db_host" , value = "mysql-dev.devopskumar.site" , type = "String" } ,
+    { name = "roboshop.dev.shipping.cart_endpoint" , value = "cart-dev.devopskumar.site:80" , type = "String" } ,
+    { name = "roboshop.dev.shipping.mysql_db_host" , value = "rds-dev.cluster-cbvsbeoyxek4.us-east-1.rds.amazonaws.com" , type = "String" } ,
     ##User
     { name = "roboshop.dev.user.user_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.user.mongodb_env" , value = "true" , type = "String" } ,
-    { name = "roboshop.dev.user.redis_host" , value = "redis-dev.devopskumar.site" , type = "String" } ,
-    { name = "roboshop.dev.user.mongodb_url" , value = "mongodb://mongodb-dev.devopskumar.site:27017/users" , type = "String" } ,
+    { name = "roboshop.dev.user.redis_host", value = "elasticache-dev.nud0cy.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.dev.user.mongodb_url" , value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
+    { name = "roboshop.dev.user.docdb_endpoint", value = "docdb-dev.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com", type = "String" },
     ##MYSQL
     { name = "roboshop.dev.mysql.username" , value = "roboshop" , type = "String"},
+    { name = "roboshop.dev.mysql.endpoint", value = "rds-dev.cluster-cbvsbeoyxek4.us-east-1.rds.amazonaws.com", type = "String" },
+
     ##DOCDB
     { name = "roboshop.dev.docdb.username" , value = "roboshop" , type = "String"},
     ##RabbitMQ
