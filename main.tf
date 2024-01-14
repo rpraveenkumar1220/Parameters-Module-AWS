@@ -12,11 +12,11 @@ variable "parameters" {
   default = [
     #### Parameters for Dev environment
     ##Frontend
-    { name = "roboshop.dev.frontend.catalogue_url" , value = "https://catalogue-dev.devopskumar.site/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.cart_url" , value = "https://cart-dev.devopskumar.site/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.user_url" , value = "https://user-dev.devopskumar.site/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.payment_url" , value = "https://payment-dev.devopskumar.site/" , type = "String" } ,
-    { name = "roboshop.dev.frontend.shipping_url" , value = "https://shipping-dev.devopskumar.site/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.catalogue_url" , value = "http://catalogue-dev.devopskumar.site/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.cart_url" , value = "http://cart-dev.devopskumar.site/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.user_url" , value = "http://user-dev.devopskumar.site/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.payment_url" , value = "http://payment-dev.devopskumar.site/" , type = "String" } ,
+    { name = "roboshop.dev.frontend.shipping_url" , value = "http://shipping-dev.devopskumar.site/" , type = "String" } ,
     ##Catalogue
     { name = "roboshop.dev.catalogue.catalogue_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.catalogue.mongodb_env" , value = "true" , type = "String" } ,
