@@ -23,6 +23,8 @@ variable "parameters" {
     { name = "roboshop.dev.catalogue.mongodb_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cii0pr4dhzbf.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
     { name = "roboshop.dev.catalogue.docdb_endpoint", value = "docdb-dev.cluster-cii0pr4dhzbf.us-east-1.docdb.amazonaws.com", type = "String" },
 
+
+
     ##Cart
     { name = "roboshop.dev.cart.cart_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.cart.redis_host" , value = "elasticache-dev.rrm5wc.clustercfg.use1.cache.amazonaws.com" , type = "String" } ,
