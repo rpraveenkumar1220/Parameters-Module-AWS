@@ -20,12 +20,12 @@ variable "parameters" {
     ##Catalogue
     { name = "roboshop.dev.catalogue.catalogue_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.catalogue.mongodb_env" , value = "true" , type = "String" } ,
-    { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
-    { name = "roboshop.dev.catalogue.docdb_endpoint", value = "docdb-dev.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com", type = "String" },
+    { name = "roboshop.dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cii0pr4dhzbf.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
+    { name = "roboshop.dev.catalogue.docdb_endpoint", value = "docdb-dev.cluster-cii0pr4dhzbf.us-east-1.docdb.amazonaws.com", type = "String" },
 
     ##Cart
     { name = "roboshop.dev.cart.cart_user" , value = "roboshop" , type = "String" } ,
-    { name = "roboshop.dev.cart.redis_host" , value = "elasticache-dev.nud0cy.clustercfg.use1.cache.amazonaws.com" , type = "String" } ,
+    { name = "roboshop.dev.cart.redis_host" , value = "elasticache-dev.rrm5wc.clustercfg.use1.cache.amazonaws.com" , type = "String" } ,
     { name = "roboshop.dev.cart.catalogue_host" , value = "catalogue-dev.devopskumar.site" , type = "String" } ,
     { name = "roboshop.dev.cart.catalogue_port" , value = "80" , type = "String" } ,
     ##Dispatch
@@ -43,16 +43,16 @@ variable "parameters" {
     ###Shipping
     { name = "roboshop.dev.shipping.shipping_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.shipping.cart_endpoint" , value = "cart-dev.devopskumar.site:80" , type = "String" } ,
-    { name = "roboshop.dev.shipping.mysql_db_host" , value = "rds-dev.cluster-cbvsbeoyxek4.us-east-1.rds.amazonaws.com" , type = "String" } ,
+    { name = "roboshop.dev.shipping.mysql_db_host" , value = "mysql-dev.cluster-cii0pr4dhzbf.us-east-1.rds.amazonaws.com" , type = "String" } ,
     ##User
     { name = "roboshop.dev.user.user_user" , value = "roboshop" , type = "String" } ,
     { name = "roboshop.dev.user.mongodb_env" , value = "true" , type = "String" } ,
-    { name = "roboshop.dev.user.redis_host", value = "elasticache-dev.nud0cy.clustercfg.use1.cache.amazonaws.com", type = "String" },
-    { name = "roboshop.dev.user.mongodb_url" , value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
-    { name = "roboshop.dev.user.docdb_endpoint", value = "docdb-dev.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com", type = "String" },
+    { name = "roboshop.dev.user.redis_host", value = "elasticache-dev.rrm5wc.clustercfg.use1.cache.amazonaws.com", type = "String" },
+    { name = "roboshop.dev.user.mongodb_url" , value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cii0pr4dhzbf.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type = "SecureString" },
+    { name = "roboshop.dev.user.docdb_endpoint", value = "docdb-dev.cluster-cii0pr4dhzbf.us-east-1.docdb.amazonaws.com", type = "String" },
     ##MYSQL
     { name = "roboshop.dev.mysql.username" , value = "roboshop" , type = "String"},
-    { name = "roboshop.dev.mysql.endpoint", value = "rds-dev.cluster-cbvsbeoyxek4.us-east-1.rds.amazonaws.com", type = "String" },
+    { name = "roboshop.dev.mysql.endpoint", value = "mysql-dev.cluster-cii0pr4dhzbf.us-east-1.rds.amazonaws.com", type = "String" },
 
     ##DOCDB
     { name = "roboshop.dev.docdb.username" , value = "roboshop" , type = "String"},
