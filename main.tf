@@ -103,9 +103,25 @@ variable "parameters" {
     { name = "roboshop.prod.user.mongodb_env" , value = "true" , type = "String" } ,
     { name = "roboshop.prod.user.redis_host" , value = "redis-prod.devopskumar.site" , type = "String" } ,
     { name = "roboshop.prod.user.mongodb_url" , value = "mongodb://mongodb-prod.devopskumar.site:27017/users" , type = "String" } ,
-    ##### Secure "String"s
+
+    #### NEXUS ######
+    { name = "roboshop.nexus.username" , value = "admin" , type = "String" },
+    { name = "roboshop.nexus.password" , value = "admin123" , type = "SecureString" },
+
+    ##### Secure Strings  ####
     { name = "roboshop.prod.dispatch.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
     { name = "roboshop.prod.payment.rabbitmq_password" , value = "roboshop123" , type = "SecureString" } ,
+
+
+    ###APP_VERSIONS
+    { name = "roboshop.prod.frontend.app_version" , value = "1.0.0" , type = "String" },
+    { name = "roboshop.prod.catalogue.app_version" , value = "1.0.0" , type = "String" },
+    { name = "roboshop.prod.cart.app_version" , value = "1.0.0" , type = "String" },
+    { name = "roboshop.prod.user.app_version" , value = "1.0.0" , type = "String" },
+    { name = "roboshop.prod.shipping.app_version" , value = "1.0.0" , type = "String" },
+    { name = "roboshop.prod.payment.app_version" , value = "1.0.0" , type = "String" },
+    { name = "roboshop.prod.dispatch.app_version" , value = "1.0.0" , type = "String" },
+
 
   ]
 }
